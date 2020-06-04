@@ -1,22 +1,16 @@
 import React from "react"
-import logo from "../logo.svg"
-import MyParagraph from "./MyParagraph";
 
-function Header() {
-    return (
-    <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <MyParagraph />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+class Header extends React.Component {
+
+  render (){
+    return(
+      <header className="header">
+        <h1>I did it.</h1>
+        <p>The place where people loves to share their achievements.</p>
       </header>
     );
+  }
 }
 
 export default Header;
+
